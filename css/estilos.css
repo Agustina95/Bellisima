@@ -1,0 +1,525 @@
+/* Encabezado fijo */
+.header {
+  display: flex;
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 100%;          
+  background: #a990d19c;
+  padding: 5px 10px;
+  display: flex;        
+  align-items: center; 
+  border-bottom: 1px solid #f7d1f2;
+  z-index: 1000;  
+  height: auto;
+  padding: 1% 3%;
+  box-sizing: border-box;       
+  justify-content: space-around;
+  font-family:'Courier New', Courier, monospace, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+/* LOGO */
+.logo-img {
+  height: 10vw;
+  width: auto;
+  position: center;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 50%; /* lo vuelve redondo */
+  max-height: 120px;
+  margin: 0;
+ 
+}
+
+.menu {
+  display: flex;
+  top: 10px;
+  left: 50px;
+  justify-content: center;
+
+
+}
+
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+ 
+
+}
+
+
+/* Contenedor del menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgb(255, 255, 255);
+  border: 1px solid #f5ddee;
+  padding: 10px;
+  width: 150px;
+  z-index: 2000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 0;
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.menu a,
+.btn-drop {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #333;
+  padding: 1.5vw;
+  font-family:'Courier New', Courier, monospace, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  background: none;
+  border: 1px solid #f5ddee;
+  cursor: pointer;
+  font-weight: 700;
+  }
+
+.menu a:hover,
+.btn-drop:hover {
+  background: none;
+  cursor: pointer;
+}
+/* TÍTULO */
+.title {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  justify-content: space-around;
+}
+.whatsapp-botones-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+   
+}
+
+
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 6vw;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  
+}
+
+p {
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: "Dancing Script", cursive;
+}
+
+body {
+    margin: 0;
+    padding-top: 120px; /* espacio para el header fijo */
+    font-family: "Allura", cursive;
+    background-color: rgb(247, 247, 247);
+}
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.section {
+  position: relative;       /* permite ubicar elementos internos */
+  padding-left: 140px;      /* deja espacio para la imagen a la izquierda */
+}
+
+.img-lateral {
+  margin: 0px;
+  position: absolute;       /* la fija dentro de la sección */
+  left: 0px;                  /* pegada al margen izquierdo */
+  top: 50%;                 /* centrada verticalmente */
+  transform: translateY(-50%);
+  width: 100%;             /* tamaño de la imagen */
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.whatsapp-botones-header{ 
+    position: fixed;
+    bottom: 3%; /* distancia desde el borde inferior */
+     left: 3%; /* distancia desde el borde izquierdo */ 
+     z-index: 1000; /* asegura que quede por encima de otros elementos */ 
+    }
+.whatsapp-botones-header img {
+  width: 100px;         /* tamaño del ícono */
+  height: 100px;        /* mantiene proporción cuadrada */
+  border-radius: 50%;  /* lo hace redondo */
+}
+.tres-columnas {
+  display: flex;
+  justify-content: center;   /* centra todo */
+  align-items: flex-start;
+  gap: 5%;              /* espacio entre columnas */
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.columna {
+  width: 30%;              /* ajustá según tus fotos */
+  min-width: 250px;
+  text-align: center;        /* centra título, foto y párrafo */
+}
+.foto {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  cursor: pointer;     /* hace que el mouse cambie a manito */
+  border: 1px solid #f5ddee;
+  border-radius: 10px;
+}
+.foto:hover {
+  transform: scale(1.05); /* efecto de agrandar suavemente */
+}
+.titulo {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+}
+.titulo3 {
+  text-align: left;
+  font-family: "Cormorant Garamond", Sans-serif;
+
+}
+.texto{
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.foto1 {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  
+}
+.zonas {
+  display: flex;            /* pone elementos uno al lado del otro */
+  align-items: center;      /* los centra verticalmente */
+  gap: 5%;                /* espacio entre imagen y texto */
+  flex-direction: row-reverse; /* invierte: imagen a la derecha */
+  margin-top: 0%;
+  flex-wrap: wrap;
+}
+.gluteos{
+  width: 40%;
+  height: 180px;
+  margin: 5%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: -150px;
+  cursor: pointer; 
+}
+.muslo {
+  width: 220px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: -200px;
+  cursor: pointer; 
+}
+.li{
+  font-family: Roboto, sans-serif;
+  text-align: left;
+  font-size: 50px;
+}
+h1 {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 26px;
+}
+#inicio {
+  scroll-margin-top: 200px;
+}
+#pedicuría {
+  scroll-margin-top: 200px;
+  
+}
+#Reflexología {
+  scroll-margin-top: 200px;
+  
+}
+
+#contacto {
+  scroll-margin-top: 200px;
+
+}
+.contacto { 
+  gap: 20px;
+
+}
+
+.face {
+  height: 50px;
+  width: auto;
+  position: left;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 80%; /* lo vuelve redondo */
+  cursor: pointer; 
+}
+.wap{ 
+  height: 80px;
+  width: auto;
+  position: left;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 80%; /* lo vuelve redondo */
+  cursor: pointer; 
+}
+.insta {
+  height: 50px;
+  width: auto;
+  position: left;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 80%; /* lo vuelve redondo */
+  cursor: pointer; 
+}
+/* .mapa{
+   width: 400px;
+   height: 400px;
+   border-top-style: double;
+   border-color: #f7d1f2;
+   border-radius: 26px;
+} */
+.pedicuría {
+  display: flex;
+  justify-content: center;
+ 
+}
+.btn-whatsapp {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  text-decoration: none;
+  color: white;
+  background-color: violet;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.btn-whatsapp:hover {
+  background-color: violet;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* espacio entre íconos */
+}
+body {
+  background-color:#cf90d14b;
+
+}
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tres-columnas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columna {
+    width: 90%;
+  }
+
+  .zonas {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .logo-img {
+    height: 80px;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 3%;
+  background-color: #a990d1;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 5%;
+}
+
+
+
+
+/* .titulo{
+  width: 100%;
+  text-align: left;
+  margin-left: -120px;
+  font-size: 60px;
+
+}
+.foto{
+  text-align: left;
+  margin-left: -50px;
+}
+.seccion-vela {
+  text-align: center;  centra el título 
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.titulo {
+  font-size: 40px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin-left: -150px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;   ESTO pone el texto debajo 
+  align-items: flex-start;  opcional si querés todo alineado a la izquierda 
+}
+.desc {
+  margin-left: -170px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.foto {
+  width: 300px; podés ajustar este valor 
+  height: auto;
+  margin-left: -150px;
+  object-fit: cover;  recorta sin deformar 
+  border-radius: 50%; /* lo vuelve redondo 
+ {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;  ESTO pone el texto debajo 
+  align-items: flex-start;  opcional si querés todo alineado a la izquierda 
+  gap: 10px;
+}
+.desc {
+  margin-left: -170px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.foto {
+  width: 300px;  podés ajustar este valor 
+  height: auto;
+  margin-left: -150px;
+  object-fit: cover;  recorta sin deformar 
+  border-radius: 50%;  lo vuelve redondo 
+}
+.titulo2 
+
+
+/* Icono hamburguesa */
+/* .hamburguesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    }
+    .hamburguesa span {
+        display:block;
+        height:3px;
+        background-color: black;
+        border-radius: 2px;
+    } */
+
+/* Menu desplegable */
+/* .nav {
+    display: none;
+    position: absolute;
+    top:60px;
+    right: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+
+    }
+
+    .nav li {
+        margin: 10px 20px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: #d81b60;
+        font-weight: bold;
+    }
+    .nav a:hover {
+        color: #ad1457;
+
+    }
+    body { 
+        padding-top: 80px
+    } */
+
+
+
+
